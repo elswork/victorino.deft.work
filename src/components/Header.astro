@@ -4,6 +4,20 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
+	<!-- Google tag (gtag.js) -->
+	<script
+	async
+	src="https://www.googletagmanager.com/gtag/js?id=G-XY80RWLVJL"
+	></script>
+	<script is:inline>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+	dataLayer.push(arguments);
+	}
+	gtag("js", new Date());
+
+	gtag("config", "G-XY80RWLVJL");
+	</script>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
